@@ -193,7 +193,7 @@ class TestOverSerialImpl : public TestOverSerial {
     size_t received;
     char* input_buffer;
 
-    std::tie(received, input_buffer) = SerialReadLine(10);
+    std::tie(received, input_buffer) ;//= SerialReadLine(10);
     if (received == 0 || input_buffer == NULL) {
       return;
     }
